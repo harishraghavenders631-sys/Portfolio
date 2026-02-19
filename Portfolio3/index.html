@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes"
+    />
+    <title>Harish Raghavender S | Python Full Stack Developer</title>
+    <meta
+      name="description"
+      content="Portfolio of Harish Raghavender S, Python Full Stack Developer specializing in scalable web applications with AI-powered backends."
+    />
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              navy: "#0F172A",
+            },
+            fontFamily: {
+              sans: ["Inter", "system-ui", "sans-serif"],
+            },
+            boxShadow: {
+              soft: "0 18px 45px rgba(15, 23, 42, 0.45)",
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- React & ReactDOM (UMD) -->
+    <script
+      src="https://unpkg.com/react@18/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <!-- Babel for JSX in-browser compilation -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+
+  <body class="bg-slate-950 text-slate-50 font-sans antialiased">
+    <div
+      class="fixed inset-0 -z-10 bg-gradient-to-br from-slate-950 via-slate-950 to-slate-900"
+    ></div>
+    <div
+      class="pointer-events-none fixed inset-x-0 top-0 -z-10 h-[520px] bg-gradient-to-b from-indigo-600/40 via-indigo-500/10 to-transparent blur-3xl"
+    ></div>
+
+    <div id="root"></div>
+
+    <!-- React app (separate file). No theme toggle icon. -->
+    <script type="text/babel" src="app.jsx"></script>
+  </body>
+</html>
+
